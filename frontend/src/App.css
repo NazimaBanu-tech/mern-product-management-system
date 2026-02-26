@@ -1,0 +1,152 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f4f7fb;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: #111;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+.heading {
+  text-align: center;
+  margin: 10px 0 18px;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.topBar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0 18px;
+}
+
+.btn {
+  background: #2f6bff;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover { opacity: 0.95; }
+
+.btn.ghost {
+  background: #fff;
+  color: #111;
+  border: 1px solid #d9e2ff;
+}
+
+.formWrap {
+  background: #fff;
+  border: 1px solid #e6eefc;
+  border-radius: 14px;
+  padding: 16px;
+  margin: 0 auto 18px;
+  max-width: 900px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.formTitle {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dfe7f5;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.form textarea { margin-top: 10px; resize: vertical; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.btnRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.status {
+  text-align: center;
+  color: #666;
+  margin: 10px 0;
+}
+
+.status.error {
+  color: #b00020;
+  font-weight: 700;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+@media (max-width: 1000px) {
+  .list { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .list { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; }
+  .heading { font-size: 32px; }
+}
+.card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e6eefc;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+.cardBody { padding: 12px; }
+
+.title {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.category {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.desc {
+  margin: 0 0 10px;
+  color: #333;
+  font-size: 13px;
+  min-height: 32px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.price {
+  font-weight: 800;
+  color: #2f6bff;
+}
+
+.btn.danger { background: #ff3b30; }
